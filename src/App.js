@@ -10,7 +10,6 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-import Home from "./components/Home";
 
 function App() {
   return (
@@ -26,12 +25,12 @@ function App() {
 
         <Grid sx={{ textAlign: "center" }} md={9} xs={12}>
           <Routes>
-            <Route path="/aboutMe" element={<AboutMe />} />
+            <Route path="/" element={<AboutMe />} />
             <Route path="/education" element={<Educations />} />
             <Route path="/Skils" element={<Skils />} />
             <Route path="/Experiences" element={<Experiences />} />
-            <Route path="/" element={<Home />} />
-            
+
+
           </Routes>
         </Grid>
 
